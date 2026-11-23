@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barmm-ppp-readiness.netlify.app/sitemap.xml
