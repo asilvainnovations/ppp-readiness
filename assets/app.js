@@ -26,7 +26,7 @@ const lowReady=d=>d.counts[0].count+d.counts[1].count;
 /* ---------- routing ---------- */
 function go(page,focus){if(!TITLES[page])page="overview";if(location.hash!=="#"+page)history.pushState(null,"","#"+page);show(page,focus)}
 function show(page,focus){if(!TITLES[page])page="overview";
- $$(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+page));$$("#nav button, .nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
+ $$(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+page));$$(".nav button[data-page]").forEach(b=>{const on=b.dataset.page===page;b.classList.toggle("active",on);on?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current")});
  $("#breadcrumb").textContent="WORKSPACE / "+TITLES[page].toUpperCase();document.title=TITLES[page]+" | BARMM PPP Readiness | MTIT";
  $("#sidebar").classList.remove("open");$("#menuBtn").setAttribute("aria-expanded","false");
  if(S&&C)R[page]();
@@ -161,10 +161,10 @@ function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");se
 /* ---------- init & events ---------- */
 document.addEventListener("click",e=>{const el=e.target.closest("[data-go]");if(!el)return;
  if(el.dataset.dim!=null)cur.dim=+el.dataset.dim;if(el.dataset.phase!=null)cur.phase=+el.dataset.phase;go(el.dataset.go,el.dataset.focus)});
-$$(".nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));
+$$(".nav button[data-page]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));
 $("#menuBtn").onclick=()=>{const o=$("#sidebar").classList.toggle("open");$("#menuBtn").setAttribute("aria-expanded",o)};
 $("#printBtn").onclick=()=>window.print();
-$("#themeBtn").onclick=()=>{const r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark";safe.set("barmm-theme",r.dataset.theme);show(location.hash.slice(1)||"overview")};
+$("#themeBtn").onclick=()=>{const r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark";if(!window.PPPConsent||window.PPPConsent.allows("preferences"))safe.set("barmm-theme",r.dataset.theme);show(location.hash.slice(1)||"overview")};
 $("#mClose").onclick=$("#mCancel").onclick=closeModal;$("#f_type").onchange=fillItems;
 $("#regForm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));d.id=(crypto.randomUUID?crypto.randomUUID():String(Date.now()));d.date=new Date().toISOString().slice(0,10);store.unshift(d);persist();e.target.reset();closeModal();R.register();toast("Record saved on this device")};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-PH">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -8,7 +8,7 @@
 <meta name="keywords" content="BARMM, Bangsamoro, PPP readiness, public-private partnership, MTIT, Bureau of Investments, LGU capacity, RA 11966, PPP Code, investment readiness">
 <meta name="author" content="MTIT–BARMM, Bureau of Investments">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://barmm-ppp-readiness.netlify.app/">
+<link rel="canonical" href="https://ppp-readiness.mtit-barmm.com/">
 <meta name="theme-color" content="#0b3d2e">
 <meta name="application-name" content="BARMM PPP Readiness">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,11 +16,12 @@
 <meta name="apple-mobile-web-app-title" content="PPP Readiness">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_PH">
 <meta property="og:site_name" content="BARMM PPP Readiness">
 <meta property="og:title" content="BARMM PPP Readiness Dashboard | MTIT">
 <meta property="og:description" content="Survey baseline, six-dimension readiness framework, critical gates and 2027–2035 PPP roadmap for the Bangsamoro.">
-<meta property="og:url" content="https://barmm-ppp-readiness.netlify.app/">
-<meta property="og:image" content="https://barmm-ppp-readiness.netlify.app/assets/mtit-icon-512.png">
+<meta property="og:url" content="https://ppp-readiness.mtit-barmm.com/">
+<meta property="og:image" content="https://ppp-readiness.mtit-barmm.com/assets/mtit-icon-512.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BARMM PPP Readiness Dashboard | MTIT">
 <meta name="twitter:description" content="Descriptive PPP readiness evidence and roadmap for the Bangsamoro Autonomous Region.">
@@ -30,9 +31,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500;600;700&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<script src="assets/site.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebApplication","name":"BARMM PPP Readiness Dashboard","applicationCategory":"BusinessApplication","operatingSystem":"Any","inLanguage":"en-PH","description":"Dashboard on PPP awareness, perceived readiness, institutional readiness framework and implementation roadmap for BARMM.","publisher":{"@type":"GovernmentOrganization","name":"Ministry of Trade, Investments and Tourism – Bureau of Investments, BARMM"}},
+{"@type":"WebSite","@id":"https://ppp-readiness.mtit-barmm.com/#website","name":"BARMM PPP Readiness","url":"https://ppp-readiness.mtit-barmm.com/","inLanguage":"en-PH","publisher":{"@id":"https://ppp-readiness.mtit-barmm.com/#org"}},
+{"@type":"GovernmentOrganization","@id":"https://ppp-readiness.mtit-barmm.com/#org","name":"Bureau of Investments, Ministry of Trade, Investments and Tourism (MTIT) – BARMM","url":"https://ppp-readiness.mtit-barmm.com/","logo":"https://ppp-readiness.mtit-barmm.com/assets/mtit-icon-512.png","email":"boi@bangsamoro.gov.ph","telephone":"+63-64-557-2819","address":{"@type":"PostalAddress","streetAddress":"Bangsamoro Government Complex","addressLocality":"Cotabato City","postalCode":"9600","addressCountry":"PH"},"contactPoint":{"@type":"ContactPoint","contactType":"PPP readiness inquiries","email":"boi@bangsamoro.gov.ph","url":"https://ppp-readiness.mtit-barmm.com/public/contact.html"}},
+{"@type":"WebApplication","name":"BARMM PPP Readiness Dashboard","url":"https://ppp-readiness.mtit-barmm.com/","termsOfService":"https://ppp-readiness.mtit-barmm.com/public/terms-of-service.html","applicationCategory":"BusinessApplication","operatingSystem":"Any","inLanguage":"en-PH","description":"Dashboard on PPP awareness, perceived readiness, institutional readiness framework and implementation roadmap for BARMM.","publisher":{"@type":"GovernmentOrganization","name":"Ministry of Trade, Investments and Tourism – Bureau of Investments, BARMM"}},
 {"@type":"Dataset","name":"BARMM PPP readiness survey, 98 respondent records","description":"Descriptive respondent data on PPP awareness, participation and self-reported readiness across Basilan, Sulu, Tawi-Tawi, Lanao and Maguindanao. Not statistically representative of all BARMM LGUs.","spatialCoverage":"Bangsamoro Autonomous Region in Muslim Mindanao, Philippines","creator":{"@type":"Person","name":"Alvin M. Silva, MDM"}}]}
 </script>
 </head>
@@ -42,7 +46,7 @@
 <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
  <div class="brand"><div class="brand-mark"><img src="assets/MTIT-logo.webp" width="48" height="48" alt="Official seal of the Ministry of Trade, Investments and Tourism (MTIT), BARMM"></div><div><h1>BARMM PPP<br>READINESS</h1><small>Investment readiness platform</small></div></div>
  <div class="nav-label">Workspace</div>
- <nav class="nav" id="nav">
+ <nav class="nav" id="nav" aria-label="Workspace">
   <button data-page="overview"><span>◫</span>Overview</button>
   <button data-page="findings"><span>▥</span>Survey Findings</button>
   <button data-page="areas"><span>⌖</span>Area Profiles</button>
@@ -51,10 +55,20 @@
   <button data-page="roadmap"><span>▤</span>Policy Roadmap</button>
  </nav>
  <div class="nav-label">Evidence &amp; Administration</div>
- <nav class="nav">
+ <nav class="nav" aria-label="Evidence and administration">
   <button data-page="validation"><span>✓</span>Validation Pack</button>
   <button data-page="register"><span>＋</span>Assessment Register</button>
   <button data-page="sources"><span>⚙</span>Data &amp; Sources</button>
+ </nav>
+ <div class="nav-label">Help &amp; Policies</div>
+ <nav class="nav" aria-label="Help and policies">
+  <a href="/public/contact.html"><span aria-hidden="true">✉</span>Contact Us</a>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="policyMenu"><span aria-hidden="true">§</span>Policies<i class="chev" aria-hidden="true">▾</i></button>
+  <div class="subnav" id="policyMenu" hidden>
+   <a href="/public/terms-of-service.html">Terms of Service</a>
+   <a href="/public/privacy-policy.html">Privacy Policy</a>
+   <a href="/public/cookie-policy.html">Cookie Policy &amp; Settings</a>
+  </div>
  </nav>
  <div class="sidebar-foot">MTIT – Bureau of Investments<br>BARMM · PPP Readiness Programme<br><span style="opacity:.7">Version 3 · Working draft · Nov 2026</span></div>
 </aside>
@@ -66,7 +80,8 @@
   <section class="page" id="page-overview"></section><section class="page" id="page-findings"></section><section class="page" id="page-areas"></section>
   <section class="page" id="page-framework"></section><section class="page" id="page-gates"></section><section class="page" id="page-roadmap"></section>
   <section class="page" id="page-validation"></section><section class="page" id="page-register"></section><section class="page" id="page-sources"></section>
-  <footer class="site">© MTIT–BARMM, Bureau of Investments. Prepared by Alvin M. Silva, MDM. Descriptive evidence only; not legal, financial or investment advice. This is a working draft for validation; no LGU maturity rating or ranking is assigned.</footer>
+  <footer class="site">© MTIT–BARMM, Bureau of Investments. Prepared by Alvin M. Silva, MDM. Descriptive evidence only; not legal, financial or investment advice. This is a working draft for validation; no LGU maturity rating or ranking is assigned.
+ <nav aria-label="Footer"><a href="public/contact.html">Contact Us</a><a href="public/terms-of-service.html">Terms of Service</a><a href="public/privacy-policy.html">Privacy Policy</a><a href="public/cookie-policy.html">Cookie Policy</a><button type="button" class="linkish" data-cookie-settings>Cookie settings</button></nav></footer>
  </div>
 </main></div>
 <div class="modal-back" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="modal"><div class="modal-head"><h2 id="mTitle">Add assessment record</h2><button class="icon-btn" id="mClose" aria-label="Close">✕</button></div>

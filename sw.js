@@ -1,5 +1,5 @@
 /* Service worker: precache app shell; network-first for data so updates show; offline fallback. Bump VERSION on each release. */
-const VERSION="barmm-ppp-v3.0.0",SHELL=["./","index.html","404.html","assets/styles.css","assets/app.js","assets/survey.json","assets/content.json","assets/vendor/chart.umd.js","assets/MTIT-logo.webp","assets/mtit-icon-192.png","assets/mtit-icon-512.png","manifest.webmanifest"];
+const VERSION="barmm-ppp-v3.1.0",SHELL=["./","index.html","404.html","assets/styles.css","assets/site.js","assets/app.js","public/contact.html","public/terms-of-service.html","public/privacy-policy.html","public/cookie-policy.html","assets/survey.json","assets/content.json","assets/vendor/chart.umd.js","assets/MTIT-logo.webp","assets/mtit-icon-192.png","assets/mtit-icon-512.png","manifest.webmanifest"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(VERSION).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==VERSION).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const r=e.request;if(r.method!=="GET")return;const u=new URL(r.url);
