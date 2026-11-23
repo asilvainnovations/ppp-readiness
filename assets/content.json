@@ -1,0 +1,90 @@
+{
+"dimensions":[
+{"n":1,"name":"Legal and regulatory","evidence":"Mandate and authority; enabling ordinances/resolutions; legal opinion; approvals pathway; land tenure and rights; regulatory permits.","levels":["No documented mandate or legal pathway; material authority gaps.","Initial legal review or draft instrument exists; pathway incomplete.","Mandate and approvals pathway documented; required legal checks evidenced.","Legal framework routinely applied, monitored and updated."],"response":"Issue BARMM PPP policy/guidance; map approval routes and responsibilities; develop legal checklists.","outputs":"Approved policy/guidance; legal pathway map; checklist; legal reviews."},
+{"n":2,"name":"Governance and institutional","evidence":"PPP focal person/team; staffing and competencies; delegations; committee terms of reference; inter-agency coordination and decision records.","levels":["No assigned focal person/team or defined responsibilities.","Focal person or ad hoc team exists; roles and processes incomplete.","Designated team, approved roles and functioning coordination arrangements.","Resourced institutional unit/team with routine performance review."],"response":"Establish inter-agency coordination; designate focal persons; define roles and decision rights.","outputs":"Coordination mechanism; focal-person roster; terms of reference; workplan."},
+{"n":3,"name":"Project preparation and technical","evidence":"Project concept; options analysis; pre-feasibility and feasibility; demand forecasts; engineering; environmental, social and climate safeguards.","levels":["No documented project concept or preparation process.","Concept notes or preliminary studies exist but key analyses are missing.","Adequate studies and documented quality review support project decisions.","Repeatable project preparation system with quality assurance and updating."],"response":"Adopt screening/preparation gates; develop concept and pre-feasibility templates; build technical capability.","outputs":"Project inventory; screened pipeline; pre-feasibility reports; safeguards records."},
+{"n":4,"name":"Financial and fiscal","evidence":"Affordability; budget forecasts; revenue assumptions; fiscal commitments; contingent liabilities; value-for-money and risk allocation.","levels":["No affordability or fiscal-risk analysis.","Preliminary cost/revenue estimates; incomplete affordability or risk work.","Documented affordability and fiscal-risk assessment with budget coordination.","Regular fiscal-risk monitoring, disclosure and integration into medium-term planning."],"response":"Adopt affordability and fiscal-risk protocols; strengthen budget coordination; require transparent value-for-money analysis.","outputs":"Affordability assessments; fiscal-risk register; budget endorsement; VfM/risk analysis."},
+{"n":5,"name":"Procurement and contract management","evidence":"Procurement strategy; competitive process; bid evaluation capability; contract documentation; performance indicators and contract management plan.","levels":["No PPP procurement or contract-management arrangements.","Initial procurement planning or draft documents; roles and controls incomplete.","Documented competitive procurement and contract-management arrangements.","Established procurement/contract management system with performance monitoring."],"response":"Develop procurement and contract-management guidance; strengthen performance monitoring.","outputs":"Procurement plan; bid documents; evaluation records; contract-management plan and KPIs."},
+{"n":6,"name":"Market and stakeholder readiness","evidence":"Stakeholder mapping and consultation; market sounding; willingness/ability to pay; competition analysis; investor engagement.","levels":["No documented stakeholder or market engagement.","Initial consultations or investor enquiries; evidence limited or unstructured.","Structured consultations and market sounding inform project design.","Regular market engagement and stakeholder feedback integrated into the pipeline."],"response":"Institutionalise consultation and market sounding; test willingness/ability to pay and competition.","outputs":"Stakeholder plans; consultation reports; market sounding records; updated assumptions."}
+],
+"levels":[
+{"l":"Level 1 — Nascent","d":"No documented system or demonstrated capability; critical gaps remain.","support":"PPP awareness; legal/role orientation; focal-person designation; concept development.","progress":"Establish minimum mandates, responsibilities and basic records."},
+{"l":"Level 2 — Developing","d":"Initial arrangements or isolated capability exist, but are incomplete or inconsistently applied.","support":"Applied workshops and coaching on screening, pre-feasibility, affordability, safeguards and procurement planning.","progress":"Convert initial arrangements into documented and consistently used procedures."},
+{"l":"Level 3 — Functional","d":"Documented procedures, assigned personnel and evidence of implementation are available.","support":"Advanced feasibility/VfM and fiscal-risk support; procurement simulations; contract-management preparation.","progress":"Improve consistency, quality assurance, monitoring and coordination."},
+{"l":"Level 4 — Institutionalised","d":"Systems are routinely applied, monitored, improved and adequately resourced.","support":"Peer learning; specialist advice on complex projects; performance benchmarking.","progress":"Sustain capability and share practice."}
+],
+"gates":[
+{"g":"Legal authority","t":"Statutory mandate, approvals pathway, required authorisations."},
+{"g":"Land and rights","t":"Ownership/tenure, site control, rights of way, encumbrances."},
+{"g":"Affordability and fiscal risk","t":"Affordability over the contract term, budget cover, contingent liabilities."},
+{"g":"Environmental and social safeguards","t":"Screening, required assessments, community and rights impacts."},
+{"g":"Procurement integrity","t":"Competition, conflict-of-interest controls, probity safeguards."}
+],
+"phases":[
+{"p":"Phase 1 — Enabling foundations","y":"2027","a":"Adopt PPP policy/guidance; clarify legal/approval pathways; establish coordination; design the evidence protocol.","o":"Policy and governance instruments; focal-person network; evidence protocol.","gate":"Authority and coordination confirmed."},
+{"p":"Phase 2 — Pipeline development","y":"2027–2028","a":"Inventory project concepts; screen for service need, public value, strategic fit and affordability; prepare a limited pre-feasibility cohort.","o":"Prioritised inventory; transparent screening; pre-feasibility studies.","gate":"Credible public-value case."},
+{"p":"Phase 3 — Transaction preparation","y":"2028–2030","a":"Complete feasibility, demand, technical, economic and financial appraisal; affordability and fiscal-risk review; safeguards; market sounding.","o":"Appraisal package; fiscal-risk review; safeguards; procurement strategy.","gate":"All critical gates assessed."},
+{"p":"Phase 4 — Procurement and early implementation","y":"2030–2032","a":"Prepare bid documents and contracts; conduct competitive procurement; award only with approvals; establish contract management.","o":"Procurement records; approved contract; contract-management plan; KPIs.","gate":"Compliant procurement and approvals."},
+{"p":"Phase 5 — Scale, learn and institutionalise","y":"2033–2035","a":"Review performance and public value; refine policy and templates; expand the pipeline selectively.","o":"Performance reviews; updated toolkit; stronger systems; continuous improvement.","gate":"Evidence of public value and performance."}
+],
+"actors":[
+["MTIT–BOI","Lead investment promotion and PPP programme coordination within its mandate; maintain programme records."],
+["BARMM ministries/agencies","Act as sector sponsors; validate service needs and concepts; provide technical and regulatory input."],
+["LGUs","Identify local needs; designate focal persons; provide plans, land/asset information and support."],
+["Regional/national oversight and approving bodies","Provide statutory guidance, review and approvals in accordance with applicable laws and delegations."],
+["Technical assistance partners","Provide targeted legal, technical, fiscal, safeguards, procurement and capacity support."]
+],
+"risks":[
+["Legal uncertainty or unclear approval route","Maintain a current legal/approval map and obtain formal review before progression."],
+["Weak preparation and unrealistic demand assumptions","Use stage gates, independent technical review and proportionate feasibility requirements."],
+["Fiscal exposure and contingent liabilities","Require affordability, fiscal-risk and budget review before preparation and award."],
+["Land, safeguards and social acceptance issues","Screen early; document rights and safeguards; engage affected stakeholders."],
+["Insufficient procurement/contract capability","Use standard documents, competitive processes, probity safeguards and dedicated contract management."],
+["PPP chosen without public-value justification","Compare PPP with conventional procurement and alternatives; proceed only where justified."]
+],
+"monitoring":[
+["PPP policy and approval pathway","To be established during 2027 validation","Policy/guidance and legal pathway map validated before rollout","Annual / on legal change"],
+["Coordination mechanism","Not yet confirmed in this study","Formal ToR, membership, secretariat, workplan and quarterly reporting","Quarterly"],
+["LGU/agency readiness profiles","No validated institutional profiles available","Baseline profiles for an agreed pilot cohort before capacity plans are finalised","Baseline; annual review"],
+["Project concepts screened","Baseline to be set through inventory","All concepts screened against agreed criteria","Quarterly"],
+["Transaction packages","No verified pipeline established","Complete appraisal, affordability, fiscal-risk and safeguards review at each stage gate","At each stage gate"],
+["Contract performance","No project-level baseline in this study","Baseline KPIs and reporting responsibilities in each executed contract","Quarterly / annual"]
+],
+"clarifications":[
+["Lanao (21 records)","Provisionally treated as Lanao del Sur.","Confirm all records and provide municipality/LGU mapping."],
+["Maguindanao (57 records)","Retained as combined; province-level attribution not available.","Provide respondent-level mapping to separate Maguindanao del Norte and del Sur, if the records permit."],
+["Sulu (7 records)","Separate contractual survey area; excluded from current-BARMM aggregate.","Confirm respondent composition and identify TESDA/cooperative records if applicable."],
+["Respondent identifiers","No municipality, LGU, office, designation or agency key.","Provide a respondent master list/enumerator log keyed to records 1–98."],
+["Sampling and fieldwork","Sampling frame, method, field dates and role register not supplied.","Provide survey protocol, field dates, selection method and respondent metadata."]
+],
+"actions":[
+["D-01","Respondent-to-LGU mapping for records 1–98","Open"],
+["D-02","Confirm Lanao province and municipalities","Open"],
+["D-03","Disaggregate Maguindanao by province if source records permit","Open"],
+["D-04","Provide sampling method, field dates and respondent profile register","Open"],
+["V-01","Confirm six-dimension scorecard and critical gates","For validation"],
+["V-02","Confirm lead agency and inter-agency coordination roles","For validation"]
+],
+"agenda":[
+["Opening and scope","Purpose, limitations, geographic treatment and validation rules."],
+["Survey findings","Consolidated descriptive results and denominators."],
+["Data quality","Respondent mapping and missing metadata."],
+["Readiness framework","Six dimensions, maturity descriptors and critical gates."],
+["Policy and roadmap","Priorities, sequencing, roles and indicators."],
+["Close-out","Owners, timelines and unresolved matters."]
+],
+"dictionary":[
+["Heard of PPP","B","Y or N","1 = Yes; 2 = No","Prior exposure to the PPP concept."],
+["PPP awareness","V","Rate","L = Low; M = Medium; H = High","Self-rated awareness level (lowercase “l” normalised to L)."],
+["PPP participation","W","N or Y","1 = Yes; 2 = No","Reported participation in PPP-related activities."],
+["Respondent readiness","AQ","Readiness you","1 = Not ready … 4 = Very much ready","Self-assessed readiness."],
+["Perceived LGU readiness","AR","Readiness LGU","1 = Not ready … 4 = Very much ready","Respondent’s perception of LGU readiness."]
+],
+"sources":[
+["Deliverable A — BARMM PPP Readiness Assessment V3","Survey findings, six-dimension framework, maturity logic, critical gates, limitations."],
+["Deliverable B — PPP Readiness & Investment Workbook V3","98 raw records; recalculated indicators; scorecard; evidence register; assessment protocol."],
+["Deliverable C — PPP Policy & Implementation Roadmap V3","Policy responses, phased roadmap 2027–2035, capacity packages, responsibilities, risks, monitoring."],
+["Supplementary Workplan and Validation Pack V3","Data clarifications, validation protocol, session agenda, action log."],
+["RA 11966 (PPP Code); RA 7160 (Local Government Code); RA 11054 (Bangsamoro Organic Law)","Policy basis cited in Deliverable A. Verify current implementing issuances before formal adoption."]
+]
+}

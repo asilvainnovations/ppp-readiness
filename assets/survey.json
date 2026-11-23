@@ -1,0 +1,762 @@
+{
+ "generated": "2026-11-23",
+ "source": "Deliverable B V3 workbook, Raw Data sheet (98 records), recalculated",
+ "all": {
+  "records": 98,
+  "heard": {
+   "n": 94,
+   "missing": 4,
+   "counts": [
+    {
+     "cat": "Yes",
+     "count": 56,
+     "pct": 59.6
+    },
+    {
+     "cat": "No",
+     "count": 38,
+     "pct": 40.4
+    }
+   ]
+  },
+  "aware": {
+   "n": 85,
+   "missing": 13,
+   "counts": [
+    {
+     "cat": "Low",
+     "count": 46,
+     "pct": 54.1
+    },
+    {
+     "cat": "Medium",
+     "count": 36,
+     "pct": 42.4
+    },
+    {
+     "cat": "High",
+     "count": 3,
+     "pct": 3.5
+    }
+   ]
+  },
+  "part": {
+   "n": 81,
+   "missing": 17,
+   "counts": [
+    {
+     "cat": "Yes",
+     "count": 24,
+     "pct": 29.6
+    },
+    {
+     "cat": "No",
+     "count": 57,
+     "pct": 70.4
+    }
+   ]
+  },
+  "self": {
+   "n": 90,
+   "missing": 8,
+   "counts": [
+    {
+     "cat": "Not ready",
+     "count": 20,
+     "pct": 22.2
+    },
+    {
+     "cat": "A little ready",
+     "count": 39,
+     "pct": 43.3
+    },
+    {
+     "cat": "Ready",
+     "count": 22,
+     "pct": 24.4
+    },
+    {
+     "cat": "Very much ready",
+     "count": 9,
+     "pct": 10.0
+    }
+   ]
+  },
+  "lgu": {
+   "n": 82,
+   "missing": 16,
+   "counts": [
+    {
+     "cat": "Not ready",
+     "count": 13,
+     "pct": 15.9
+    },
+    {
+     "cat": "A little ready",
+     "count": 35,
+     "pct": 42.7
+    },
+    {
+     "cat": "Ready",
+     "count": 22,
+     "pct": 26.8
+    },
+    {
+     "cat": "Very much ready",
+     "count": 12,
+     "pct": 14.6
+    }
+   ]
+  }
+ },
+ "current": {
+  "records": 91,
+  "heard": {
+   "n": 90,
+   "missing": 1,
+   "counts": [
+    {
+     "cat": "Yes",
+     "count": 56,
+     "pct": 62.2
+    },
+    {
+     "cat": "No",
+     "count": 34,
+     "pct": 37.8
+    }
+   ]
+  },
+  "aware": {
+   "n": 82,
+   "missing": 9,
+   "counts": [
+    {
+     "cat": "Low",
+     "count": 43,
+     "pct": 52.4
+    },
+    {
+     "cat": "Medium",
+     "count": 36,
+     "pct": 43.9
+    },
+    {
+     "cat": "High",
+     "count": 3,
+     "pct": 3.7
+    }
+   ]
+  },
+  "part": {
+   "n": 80,
+   "missing": 11,
+   "counts": [
+    {
+     "cat": "Yes",
+     "count": 24,
+     "pct": 30.0
+    },
+    {
+     "cat": "No",
+     "count": 56,
+     "pct": 70.0
+    }
+   ]
+  },
+  "self": {
+   "n": 84,
+   "missing": 7,
+   "counts": [
+    {
+     "cat": "Not ready",
+     "count": 19,
+     "pct": 22.6
+    },
+    {
+     "cat": "A little ready",
+     "count": 39,
+     "pct": 46.4
+    },
+    {
+     "cat": "Ready",
+     "count": 18,
+     "pct": 21.4
+    },
+    {
+     "cat": "Very much ready",
+     "count": 8,
+     "pct": 9.5
+    }
+   ]
+  },
+  "lgu": {
+   "n": 76,
+   "missing": 15,
+   "counts": [
+    {
+     "cat": "Not ready",
+     "count": 13,
+     "pct": 17.1
+    },
+    {
+     "cat": "A little ready",
+     "count": 31,
+     "pct": 40.8
+    },
+    {
+     "cat": "Ready",
+     "count": 21,
+     "pct": 27.6
+    },
+    {
+     "cat": "Very much ready",
+     "count": 11,
+     "pct": 14.5
+    }
+   ]
+  }
+ },
+ "areas": {
+  "Basilan": {
+   "records": 9,
+   "heard": {
+    "n": 9,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 5,
+      "pct": 55.6
+     },
+     {
+      "cat": "No",
+      "count": 4,
+      "pct": 44.4
+     }
+    ]
+   },
+   "aware": {
+    "n": 9,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Low",
+      "count": 6,
+      "pct": 66.7
+     },
+     {
+      "cat": "Medium",
+      "count": 3,
+      "pct": 33.3
+     },
+     {
+      "cat": "High",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "part": {
+    "n": 4,
+    "missing": 5,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "No",
+      "count": 4,
+      "pct": 100.0
+     }
+    ]
+   },
+   "self": {
+    "n": 9,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 1,
+      "pct": 11.1
+     },
+     {
+      "cat": "A little ready",
+      "count": 6,
+      "pct": 66.7
+     },
+     {
+      "cat": "Ready",
+      "count": 2,
+      "pct": 22.2
+     },
+     {
+      "cat": "Very much ready",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "lgu": {
+    "n": 8,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "A little ready",
+      "count": 6,
+      "pct": 75.0
+     },
+     {
+      "cat": "Ready",
+      "count": 1,
+      "pct": 12.5
+     },
+     {
+      "cat": "Very much ready",
+      "count": 1,
+      "pct": 12.5
+     }
+    ]
+   }
+  },
+  "Sulu": {
+   "records": 7,
+   "heard": {
+    "n": 4,
+    "missing": 3,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "No",
+      "count": 4,
+      "pct": 100.0
+     }
+    ]
+   },
+   "aware": {
+    "n": 3,
+    "missing": 4,
+    "counts": [
+     {
+      "cat": "Low",
+      "count": 3,
+      "pct": 100.0
+     },
+     {
+      "cat": "Medium",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "High",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "part": {
+    "n": 1,
+    "missing": 6,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "No",
+      "count": 1,
+      "pct": 100.0
+     }
+    ]
+   },
+   "self": {
+    "n": 6,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 1,
+      "pct": 16.7
+     },
+     {
+      "cat": "A little ready",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "Ready",
+      "count": 4,
+      "pct": 66.7
+     },
+     {
+      "cat": "Very much ready",
+      "count": 1,
+      "pct": 16.7
+     }
+    ]
+   },
+   "lgu": {
+    "n": 6,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "A little ready",
+      "count": 4,
+      "pct": 66.7
+     },
+     {
+      "cat": "Ready",
+      "count": 1,
+      "pct": 16.7
+     },
+     {
+      "cat": "Very much ready",
+      "count": 1,
+      "pct": 16.7
+     }
+    ]
+   }
+  },
+  "Tawi-Tawi": {
+   "records": 4,
+   "heard": {
+    "n": 4,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 4,
+      "pct": 100.0
+     },
+     {
+      "cat": "No",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "aware": {
+    "n": 4,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Low",
+      "count": 2,
+      "pct": 50.0
+     },
+     {
+      "cat": "Medium",
+      "count": 2,
+      "pct": 50.0
+     },
+     {
+      "cat": "High",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "part": {
+    "n": 4,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "No",
+      "count": 4,
+      "pct": 100.0
+     }
+    ]
+   },
+   "self": {
+    "n": 4,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 3,
+      "pct": 75.0
+     },
+     {
+      "cat": "A little ready",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "Ready",
+      "count": 1,
+      "pct": 25.0
+     },
+     {
+      "cat": "Very much ready",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   },
+   "lgu": {
+    "n": 4,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 2,
+      "pct": 50.0
+     },
+     {
+      "cat": "A little ready",
+      "count": 2,
+      "pct": 50.0
+     },
+     {
+      "cat": "Ready",
+      "count": 0,
+      "pct": 0.0
+     },
+     {
+      "cat": "Very much ready",
+      "count": 0,
+      "pct": 0.0
+     }
+    ]
+   }
+  },
+  "Lanao del Sur": {
+   "records": 21,
+   "heard": {
+    "n": 21,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 16,
+      "pct": 76.2
+     },
+     {
+      "cat": "No",
+      "count": 5,
+      "pct": 23.8
+     }
+    ]
+   },
+   "aware": {
+    "n": 21,
+    "missing": 0,
+    "counts": [
+     {
+      "cat": "Low",
+      "count": 9,
+      "pct": 42.9
+     },
+     {
+      "cat": "Medium",
+      "count": 11,
+      "pct": 52.4
+     },
+     {
+      "cat": "High",
+      "count": 1,
+      "pct": 4.8
+     }
+    ]
+   },
+   "part": {
+    "n": 20,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 8,
+      "pct": 40.0
+     },
+     {
+      "cat": "No",
+      "count": 12,
+      "pct": 60.0
+     }
+    ]
+   },
+   "self": {
+    "n": 20,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 2,
+      "pct": 10.0
+     },
+     {
+      "cat": "A little ready",
+      "count": 10,
+      "pct": 50.0
+     },
+     {
+      "cat": "Ready",
+      "count": 5,
+      "pct": 25.0
+     },
+     {
+      "cat": "Very much ready",
+      "count": 3,
+      "pct": 15.0
+     }
+    ]
+   },
+   "lgu": {
+    "n": 17,
+    "missing": 4,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 1,
+      "pct": 5.9
+     },
+     {
+      "cat": "A little ready",
+      "count": 5,
+      "pct": 29.4
+     },
+     {
+      "cat": "Ready",
+      "count": 7,
+      "pct": 41.2
+     },
+     {
+      "cat": "Very much ready",
+      "count": 4,
+      "pct": 23.5
+     }
+    ]
+   }
+  },
+  "Maguindanao (combined)": {
+   "records": 57,
+   "heard": {
+    "n": 56,
+    "missing": 1,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 31,
+      "pct": 55.4
+     },
+     {
+      "cat": "No",
+      "count": 25,
+      "pct": 44.6
+     }
+    ]
+   },
+   "aware": {
+    "n": 48,
+    "missing": 9,
+    "counts": [
+     {
+      "cat": "Low",
+      "count": 26,
+      "pct": 54.2
+     },
+     {
+      "cat": "Medium",
+      "count": 20,
+      "pct": 41.7
+     },
+     {
+      "cat": "High",
+      "count": 2,
+      "pct": 4.2
+     }
+    ]
+   },
+   "part": {
+    "n": 52,
+    "missing": 5,
+    "counts": [
+     {
+      "cat": "Yes",
+      "count": 16,
+      "pct": 30.8
+     },
+     {
+      "cat": "No",
+      "count": 36,
+      "pct": 69.2
+     }
+    ]
+   },
+   "self": {
+    "n": 51,
+    "missing": 6,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 13,
+      "pct": 25.5
+     },
+     {
+      "cat": "A little ready",
+      "count": 23,
+      "pct": 45.1
+     },
+     {
+      "cat": "Ready",
+      "count": 10,
+      "pct": 19.6
+     },
+     {
+      "cat": "Very much ready",
+      "count": 5,
+      "pct": 9.8
+     }
+    ]
+   },
+   "lgu": {
+    "n": 47,
+    "missing": 10,
+    "counts": [
+     {
+      "cat": "Not ready",
+      "count": 10,
+      "pct": 21.3
+     },
+     {
+      "cat": "A little ready",
+      "count": 18,
+      "pct": 38.3
+     },
+     {
+      "cat": "Ready",
+      "count": 13,
+      "pct": 27.7
+     },
+     {
+      "cat": "Very much ready",
+      "count": 6,
+      "pct": 12.8
+     }
+    ]
+   }
+  }
+ }
+}
