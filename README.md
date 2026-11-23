@@ -10,7 +10,7 @@ Every KPI card, chart and dimension/phase tile on the Overview links to its deta
 ## Deploy to Netlify
 1. Push this folder to a Git repo, then **Add new site → Import from Git**. Build command: *(empty)*; publish directory: `.`
    Or drag the folder onto https://app.netlify.com/drop.
-2. Replace `https://barmm-ppp-readiness.netlify.app/` in `index.html`, `robots.txt` and `sitemap.xml` with your real domain.
+2. The canonical domain is `https://ppp-readiness.mtit-barmm.com/` (set in `index.html`, the `public/` pages, `robots.txt` and `sitemap.xml`).
 3. Bump `VERSION` in `sw.js` on each release so installed apps update.
 
 ## Updating data
@@ -22,3 +22,8 @@ Edit the workbook copy at `tools/source-workbook.xlsx`, then `pip install openpy
 - The logo is shown in a circular crop via CSS (`border-radius:50%`) from `assets/MTIT-logo.webp`.
 - The CSP allows no inline scripts. Keep new JavaScript in files.
 - Survey data are descriptive of 98 respondents, not representative of all BARMM LGUs; no LGU maturity score or ranking is produced.
+
+## Help & policy pages
+- `public/contact.html` (Netlify Forms form `ppp-contact`, no-JS success page `public/contact-sent.html`), `public/terms-of-service.html`, `public/privacy-policy.html`, `public/cookie-policy.html` share the dashboard's side panel and `assets/styles.css`.
+- `assets/site.js` runs on every page: the side-panel **Policies** dropdown, shell controls on the static pages, the contact form, and the **cookie consent & settings** pop-up, which appears after 2 minutes of visible time on the platform (counted across pages per tab) until a choice is saved. Any element with `data-cookie-settings` reopens it. `window.PPPConsent.allows("preferences"|"analytics")` gates optional storage — check it before adding any analytics.
+- If you add a storage item, list it in the cookie policy table and bump `CONSENT_VERSION` in `assets/site.js` when re-consent is needed.

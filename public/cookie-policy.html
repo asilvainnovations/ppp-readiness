@@ -1,459 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-PH">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cookie and Local Storage Policy for BIRD 2026-2035 Validation Survey. Learn how we use browser storage to preserve your progress and enhance your experience.">
-    <meta name="keywords" content="BIRD 2026-2035, cookie policy, local storage, BARMM, Bangsamoro Investment Roadmap, data privacy, validation survey">
-    <meta name="author" content="Bureau of Investments - Ministry of Trade, Investments and Tourism, BARMM">
-    <meta property="og:title" content="Cookie & Local Storage Policy | BIRD 2026-2035">
-    <meta property="og:description" content="Understanding how BIRD 2026-2035 uses browser storage to enhance your survey experience while protecting your privacy.">
-    <meta property="og:type" content="website">
-    <title>Cookie & Local Storage Policy | BIRD 2026-2035 Validation Survey</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            background: #f9fafb;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .header img {
-            height: 60px;
-            margin-bottom: 1rem;
-        }
-
-        .header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        .content {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            color: #064e3b;
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem 0;
-            border-bottom: 2px solid #C9A84C;
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            color: #065f46;
-            font-size: 1.2rem;
-            margin: 1.5rem 0 0.75rem 0;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
-        ul {
-            margin: 1rem 0 1rem 2rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight {
-            background: #fdf6e3;
-            border-left: 4px solid #C9A84C;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box {
-            background: #ecfdf5;
-            border: 1px solid #6ee7b7;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-
-        .footer {
-            background: #022c22;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .footer-links {
-            margin: 1rem 0;
-        }
-
-        .footer-links a {
-            color: #C9A84C;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Cookie Consent Banner */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(2, 44, 34, 0.98);
-            color: white;
-            padding: 1.5rem;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
-            z-index: 9999;
-            display: none;
-            animation: slideUp 0.3s ease-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .cookie-banner.show {
-            display: block;
-        }
-
-        .cookie-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .cookie-text {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .cookie-text h3 {
-            color: #C9A84C;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .cookie-text p {
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 0;
-        }
-
-        .cookie-text a {
-            color: #C9A84C;
-            text-decoration: underline;
-        }
-
-        .cookie-buttons {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-
-        .cookie-btn {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .cookie-btn-accept {
-            background: linear-gradient(135deg, #C9A84C 0%, #E8C560 100%);
-            color: #022c22;
-        }
-
-        .cookie-btn-accept:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(201, 168, 76, 0.4);
-        }
-
-        .cookie-btn-decline {
-            background: transparent;
-            color: #6ee7b7;
-            border: 1px solid #6ee7b7;
-        }
-
-        .cookie-btn-decline:hover {
-            background: rgba(110, 231, 183, 0.1);
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .content {
-                padding: 1.5rem;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            .cookie-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .cookie-buttons {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cookie Policy & Settings | BARMM PPP Readiness – MTIT</title>
+<meta name="description" content="Cookie Policy and consent settings for the BARMM PPP Readiness Dashboard: no tracking cookies, the browser storage used, its purpose and duration, and how to change your choices.">
+<meta name="keywords" content="BARMM PPP Readiness cookie policy, cookie settings, MTIT BARMM cookies, localStorage, consent, Data Privacy Act RA 10173">
+<meta name="author" content="MTIT–BARMM, Bureau of Investments">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://ppp-readiness.mtit-barmm.com/public/cookie-policy.html">
+<meta name="theme-color" content="#0b3d2e">
+<meta name="application-name" content="BARMM PPP Readiness">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_PH">
+<meta property="og:site_name" content="BARMM PPP Readiness">
+<meta property="og:title" content="Cookie Policy & Settings | BARMM PPP Readiness">
+<meta property="og:description" content="Cookie Policy and consent settings for the BARMM PPP Readiness Dashboard: no tracking cookies, the browser storage used, its purpose and duration, and how to change your choices.">
+<meta property="og:url" content="https://ppp-readiness.mtit-barmm.com/public/cookie-policy.html">
+<meta property="og:image" content="https://ppp-readiness.mtit-barmm.com/assets/mtit-icon-512.png">
+<meta property="og:image:alt" content="Official seal of MTIT–BARMM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cookie Policy & Settings | BARMM PPP Readiness">
+<meta name="twitter:description" content="Cookie Policy and consent settings for the BARMM PPP Readiness Dashboard: no tracking cookies, the browser storage used, its purpose and duration, and how to change your choices.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/assets/mtit-icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/assets/mtit-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500;600;700&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/site.js"></script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "GovernmentOrganization",
+"@id": "https://ppp-readiness.mtit-barmm.com/#org",
+"name": "Bureau of Investments, Ministry of Trade, Investments and Tourism (MTIT) – BARMM",
+"alternateName": "BOI-MTIT BARMM",
+"url": "https://ppp-readiness.mtit-barmm.com/",
+"logo": "https://ppp-readiness.mtit-barmm.com/assets/mtit-icon-512.png",
+"email": "boi@bangsamoro.gov.ph",
+"telephone": "+63-64-557-2819",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Bangsamoro Government Complex",
+"addressLocality": "Cotabato City",
+"postalCode": "9600",
+"addressRegion": "Bangsamoro Autonomous Region in Muslim Mindanao",
+"addressCountry": "PH"
+},
+"areaServed": {
+"@type": "AdministrativeArea",
+"name": "Bangsamoro Autonomous Region in Muslim Mindanao"
+}
+},
+{
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "BARMM PPP Readiness Dashboard",
+"item": "https://ppp-readiness.mtit-barmm.com/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Cookie Policy & Settings",
+"item": "https://ppp-readiness.mtit-barmm.com/public/cookie-policy.html"
+}
+]
+},
+{
+"@type": "WebPage",
+"@id": "https://ppp-readiness.mtit-barmm.com/public/cookie-policy.html#page",
+"url": "https://ppp-readiness.mtit-barmm.com/public/cookie-policy.html",
+"name": "Cookie Policy & Settings – BARMM PPP Readiness Dashboard",
+"inLanguage": "en-PH",
+"datePublished": "2026-11-23",
+"dateModified": "2026-11-23",
+"publisher": {
+"@id": "https://ppp-readiness.mtit-barmm.com/#org"
+},
+"isPartOf": {
+"@type": "WebSite",
+"name": "BARMM PPP Readiness",
+"url": "https://ppp-readiness.mtit-barmm.com/"
+}
+}
+]
+}
+</script>
 </head>
-<body>
-    <header class="header">
-        <img src="https://mtit.bangsamoro.gov.ph/wp-content/uploads/2024/04/MTIT-HEADER-2024.png" alt="MTIT BARMM Logo">
-        <h1>Cookie & Local Storage Policy</h1>
-        <p>BIRD 2026-2035 Validation Survey Platform</p>
-    </header>
-
-    <div class="container">
-        <div class="content">
-            <p><strong>Effective Date:</strong> July 1, 2026 | <strong>Last Updated:</strong> July 1, 2026</p>
-
-            <h2>1. Introduction</h2>
-            <p>This Cookie and Local Storage Policy explains how the Bangsamoro Investment Roadmap Development (BIRD) 2026-2035 Validation Survey platform uses browser storage technologies to enhance your experience. This policy should be read in conjunction with our <a href="https://asilvainnovations.github.io/BIRD-2026-2035/public/privacy-policy.html" style="color: #C9A84C;">Privacy Policy</a>.</p>
-
-            <div class="highlight">
-                <strong>Important:</strong> The BIRD platform does <strong>NOT</strong> use traditional HTTP cookies for tracking, advertising, or analytics purposes. Instead, we use your browser's <strong>localStorage</strong> technology solely to improve your user experience.
-            </div>
-
-            <h2>2. What We Use: LocalStorage (Not Cookies)</h2>
-            <p>LocalStorage is a web technology that allows websites to store small amounts of data directly in your browser. Unlike traditional cookies, localStorage data:</p>
-            <ul>
-                <li>Is stored only on your device</li>
-                <li>Is never transmitted to our servers</li>
-                <li>Cannot be accessed by other websites</li>
-                <li>Does not expire automatically (you can clear it manually)</li>
-                <li>Does not track your browsing activity across sites</li>
-            </ul>
-
-            <h2>3. How We Use LocalStorage</h2>
-            <p>The BIRD platform uses localStorage for two specific purposes:</p>
-
-            <h3>3.1 Progress Preservation</h3>
-            <p>When you participate in the Validation Survey, your responses are automatically saved to your browser's localStorage as you work. This ensures that:</p>
-            <ul>
-                <li>You don't lose your progress if your browser crashes or closes accidentally</li>
-                <li>You can pause the survey and return later to complete it</li>
-                <li>Your partially completed responses are preserved between sessions</li>
-            </ul>
-
-            <h3>3.2 State Management</h3>
-            <p>When you interact with the BIRD Roadmap and Dashboard, localStorage remembers:</p>
-            <ul>
-                <li>Which sections you have expanded or collapsed</li>
-                <li>Your navigation preferences</li>
-                <li>Display settings you have chosen</li>
-            </ul>
-
-            <div class="info-box">
-                <strong>What We Do NOT Store:</strong> We do not store personal information, survey responses (once submitted), login credentials, or any data that could identify you in localStorage. All survey responses are transmitted securely to our servers and are not retained in your browser.
-            </div>
-
-            <h2>4. What We Do NOT Use</h2>
-            <p>The BIRD platform does <strong>NOT</strong> use:</p>
-            <ul>
-                <li>❌ Tracking cookies</li>
-                <li>❌ Advertising pixels or beacons</li>
-                <li>❌ Third-party analytics services (Google Analytics, Facebook Pixel, etc.)</li>
-                <li>❌ Social media tracking</li>
-                <li>❌ Cross-site tracking technologies</li>
-                <li>❌ Session cookies for user profiling</li>
-            </ul>
-
-            <h2>5. Your Control Over LocalStorage</h2>
-            <p>You have complete control over localStorage data. You can:</p>
-
-            <h3>5.1 Clear LocalStorage</h3>
-            <p>To clear all localStorage data from the BIRD platform:</p>
-            <ul>
-                <li><strong>Chrome/Edge:</strong> Settings → Privacy and Security → Clear Browsing Data → Select "Cookies and other site data" → Clear</li>
-                <li><strong>Firefox:</strong> Options → Privacy & Security → Cookies and Site Data → Clear Data</li>
-                <li><strong>Safari:</strong> Preferences → Privacy → Manage Website Data → Remove All</li>
-            </ul>
-
-            <h3>5.2 Disable LocalStorage</h3>
-            <p>You can disable localStorage in your browser settings. However, please note that disabling localStorage will:</p>
-            <ul>
-                <li>Prevent automatic saving of your survey progress</li>
-                <li>Require you to complete the survey in a single session</li>
-                <li>Reset your navigation preferences each time you visit</li>
-            </ul>
-
-            <h3>5.3 Use Private/Incognito Mode</h3>
-            <p>Browsing in private or incognito mode will automatically clear localStorage when you close the browser window.</p>
-
-            <h2>6. Data Security</h2>
-            <p>LocalStorage data is:</p>
-            <ul>
-                <li>Stored locally on your device only</li>
-                <li>Not transmitted over the internet</li>
-                <li>Not accessible to other websites or applications</li>
-                <li>Subject to your browser's built-in security features</li>
-            </ul>
-
-            <h2>7. Consent and Your Choices</h2>
-            <p>When you first visit the BIRD platform, you will see a consent banner asking for your permission to use localStorage. You can:</p>
-            <ul>
-                <li><strong>Accept:</strong> Allow localStorage to be used for progress preservation and state management</li>
-                <li><strong>Decline:</strong> Disable localStorage functionality (survey auto-save will not work)</li>
-            </ul>
-
-            <p>Your consent choice is stored in localStorage so you won't see the banner repeatedly. You can change your preference at any time by clearing your browser data.</p>
-
-            <h2>8. Impact of Declining</h2>
-            <p>If you decline the use of localStorage:</p>
-            <ul>
-                <li>✅ You can still access and use all BIRD platform features</li>
-                <li>✅ You can still complete and submit the Validation Survey</li>
-                <li>✅ Your privacy is fully protected</li>
-                <li>❌ Survey progress will not auto-save (you must complete in one session)</li>
-                <li>❌ Navigation preferences will not be remembered</li>
-            </ul>
-
-            <h2>9. Changes to This Policy</h2>
-            <p>We may update this Cookie and Local Storage Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
-
-            <h2>10. Contact Us</h2>
-            <p>If you have questions about this Cookie and Local Storage Policy or our data practices, please contact:</p>
-            <div class="info-box">
-                <strong>Data Protection Officer – BOI-MTIT, BARMM</strong><br>
-                Email: <a href="mailto:boi@bangsamoro.gov.ph" style="color: #C9A84C;">boi@bangsamoro.gov.ph</a><br>
-                Telephone: (064) 557 2819<br>
-                Mobile: 0917.834.333<br>
-                Address: Bangsamoro Government Complex, Cotabato City, BARMM, Philippines
-            </div>
-
-            <p>For complaints that cannot be resolved directly with us, you may contact the National Privacy Commission (NPC) of the Philippines at <a href="https://privacy.gov.ph" style="color: #C9A84C;">privacy.gov.ph</a>.</p>
-
-            <h2>11. Related Policies</h2>
-            <p>This Cookie and Local Storage Policy is part of our broader privacy framework. Please also review:</p>
-            <ul>
-                <li><a href="https://asilvainnovations.github.io/BIRD-2026-2035/public/privacy-policy.html" style="color: #C9A84C; font-weight: 600;">Privacy Policy</a> - Comprehensive information about how we collect, use, and protect your personal data</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="https://asilvainnovations.github.io/BIRD-2026-2035/public/privacy-policy.html">Privacy Policy</a>
-            <a href="https://bird-survey.asilvainnovations.com">Validation Survey</a>
-            <a href="https://bird-roadmap.asilvainnovations.com">Read the Roadmap</a>
-            <a href="https://bird-contact.asilvainnovations.com">Contact Us</a>
-        </div>
-        <p>&copy; 2026 Bangsamoro Autonomous Region in Muslim Mindanao (BARMM). All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">BIRD 2026-2035 Validation Survey — The Emerging Bangsamoro: A Hub for Resilient and Ethical Growth</p>
-    </footer>
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookieBanner" class="cookie-banner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <h3>🍪 We Use LocalStorage to Enhance Your Experience</h3>
-                <p>
-                    The BIRD platform uses your browser's localStorage (not traditional cookies) to automatically save your survey progress and remember your preferences. This data stays on your device and is never sent to our servers. 
-                    <a href="https://asilvainnovations.github.io/BIRD-2026-2035/public/privacy-policy.html">Learn more</a>
-                </p>
-            </div>
-            <div class="cookie-buttons">
-                <button id="acceptBtn" class="cookie-btn cookie-btn-accept">Accept</button>
-                <button id="declineBtn" class="cookie-btn cookie-btn-decline">Decline</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Cookie/LocalStorage Consent Management
-        (function() {
-            const CONSENT_KEY = 'bird_storage_consent';
-            const banner = document.getElementById('cookieBanner');
-            const acceptBtn = document.getElementById('acceptBtn');
-            const declineBtn = document.getElementById('declineBtn');
-
-            // Check if user has already made a choice
-            function checkConsent() {
-                const consent = localStorage.getItem(CONSENT_KEY);
-                if (!consent) {
-                    // Show banner if no consent recorded
-                    setTimeout(() => {
-                        banner.classList.add('show');
-                    }, 1000);
-                }
-            }
-
-            // Handle Accept
-            acceptBtn.addEventListener('click', function() {
-                localStorage.setItem(CONSENT_KEY, 'accepted');
-                banner.classList.remove('show');
-                console.log('LocalStorage consent accepted');
-            });
-
-            // Handle Decline
-            declineBtn.addEventListener('click', function() {
-                localStorage.setItem(CONSENT_KEY, 'declined');
-                banner.classList.remove('show');
-                
-                // Clear any existing localStorage data (except consent itself)
-                const keysToKeep = [CONSENT_KEY];
-                const allKeys = Object.keys(localStorage);
-                allKeys.forEach(key => {
-                    if (!keysToKeep.includes(key)) {
-                        localStorage.removeItem(key);
-                    }
-                });
-                
-                console.log('LocalStorage consent declined - existing data cleared');
-            });
-
-            // Initialize on page load
-            checkConsent();
-        })();
-    </script>
-</body>
-</html>
+<body data-shell="static">
+<a class="skip" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+ <a class="brand" href="/" style="text-decoration:none;color:inherit"><div class="brand-mark"><img src="/assets/MTIT-logo.webp" width="48" height="48" alt="Official seal of the Ministry of Trade, Investments and Tourism (MTIT), BARMM"></div><div><div class="brand-name" style="font:700 13px Montserrat,Arial,sans-serif;line-height:1.35;letter-spacing:.3px">BARMM PPP<br>READINESS</div><small>Investment readiness platform</small></div></a>
+ <div class="nav-label">Workspace</div>
+ <nav class="nav" aria-label="Workspace">
+  <a href="/#overview"><span aria-hidden="true">◫</span>Overview</a>
+  <a href="/#findings"><span aria-hidden="true">▥</span>Survey Findings</a>
+  <a href="/#areas"><span aria-hidden="true">⌖</span>Area Profiles</a>
+  <a href="/#framework"><span aria-hidden="true">⬡</span>Readiness Framework</a>
+  <a href="/#gates"><span aria-hidden="true">◈</span>Critical Gates</a>
+  <a href="/#roadmap"><span aria-hidden="true">▤</span>Policy Roadmap</a>
+ </nav>
+ <div class="nav-label">Evidence &amp; Administration</div>
+ <nav class="nav" aria-label="Evidence and administration">
+  <a href="/#validation"><span aria-hidden="true">✓</span>Validation Pack</a>
+  <a href="/#register"><span aria-hidden="true">＋</span>Assessment Register</a>
+  <a href="/#sources"><span aria-hidden="true">⚙</span>Data &amp; Sources</a>
+ </nav>
+ <div class="nav-label">Help &amp; Policies</div>
+ <nav class="nav" aria-label="Help and policies">
+  <a href="/public/contact.html"><span aria-hidden="true">✉</span>Contact Us</a>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="policyMenu"><span aria-hidden="true">§</span>Policies<i class="chev" aria-hidden="true">▾</i></button>
+  <div class="subnav" id="policyMenu" hidden>
+   <a href="/public/terms-of-service.html">Terms of Service</a>
+   <a href="/public/privacy-policy.html">Privacy Policy</a>
+   <a href="/public/cookie-policy.html" aria-current="page">Cookie Policy &amp; Settings</a>
+  </div>
+ </nav>
+ <div class="sidebar-foot">MTIT – Bureau of Investments<br>BARMM · PPP Readiness Programme<br><span style="opacity:.7">Version 3 · Working draft · Nov 2026</span></div>
+</aside>
+<main class="main" id="main" tabindex="-1">
+ <header class="topbar"><div style="display:flex;align-items:center;gap:14px"><button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">☰</button><div class="crumb">HELP &amp; POLICIES / COOKIE POLICY &amp; SETTINGS</div></div>
+ <div class="top-actions"><a class="btn" href="/" style="text-decoration:none">← <span>Dashboard</span></a><button class="btn" id="themeBtn" type="button" aria-label="Toggle dark mode">◐</button><button class="btn primary" id="printBtn" type="button">↧ <span>Print</span></button></div></header>
+ <div class="content">
+<header class="doc-hero">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Dashboard</a> › <span>Help &amp; Policies</span> › <span aria-current="page">Cookie Policy &amp; Settings</span></nav>
+  <div class="eyebrow">Help &amp; Policies · Cookies</div>
+  <h1>Cookie Policy &amp; Settings</h1>
+  <p>What the BARMM PPP Readiness Dashboard stores in your browser, why, and how to change your choices — no advertising or tracking cookies, ever.</p>
+  <div class="meta-row"><span class="pill">Effective 23 November 2026</span><span class="pill">Last updated 23 November 2026</span><span class="pill">Version 1.0</span><span class="pill">No tracking cookies</span></div>
+ </header>
+<div class="doc-layout">
+ <nav class="card toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#summary">Summary</a></li><li><a href="#settings">Your current settings</a></li><li><a href="#what">Cookies and browser storage, explained</a></li><li><a href="#inventory">What we store</a></li><li><a href="#third">Third parties</a></li><li><a href="#popup">How the consent pop-up works</a></li><li><a href="#browser">Controlling storage in your browser</a></li><li><a href="#changes">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+ <article class="card doc">
+<section id="summary" aria-labelledby="summary-h"><h2 id="summary-h"><span class="n">01</span>Summary</h2>
+<div class="callout"><strong>No tracking.</strong> The BARMM PPP Readiness Dashboard sets no advertising, social-media or cross-site tracking cookies and loads no analytics. It uses a small amount of browser storage so the dashboard works offline, keeps records you choose to save, and remembers your settings.</div>
+<p>This policy explains each item stored, why, and how to control it. Read it with the <a href="/public/privacy-policy.html">Privacy Policy</a>.</p>
+</section>
+<section id="settings" aria-labelledby="settings-h"><h2 id="settings-h"><span class="n">02</span>Your current settings</h2>
+<div class="card" style="box-shadow:none;background:var(--soft)">
+<p id="ccStatus" aria-live="polite" style="margin:0 0 12px">Loading your current choice…</p>
+<button type="button" class="btn primary" data-cookie-settings>Open cookie settings</button>
+</div>
+<p class="muted" style="font-size:14px">You can also reopen these settings at any time from the “Cookie settings” link in the footer of every page.</p>
+</section>
+<section id="what" aria-labelledby="what-h"><h2 id="what-h"><span class="n">03</span>Cookies and browser storage, explained</h2>
+<ul><li><strong>Cookies</strong> are small text files a website asks your browser to keep and send back on later visits. This platform does not set any.</li>
+<li><strong>localStorage</strong> keeps small items on your device until you clear them. It is not sent to our servers.</li>
+<li><strong>sessionStorage</strong> works the same way but is erased when you close the tab.</li>
+<li><strong>Cache Storage</strong> (used by the app’s service worker) keeps copies of the platform’s own files so it opens quickly and works offline.</li></ul>
+</section>
+<section id="inventory" aria-labelledby="inventory-h"><h2 id="inventory-h"><span class="n">04</span>What we store</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Name</th><th>Technology</th><th>Category</th><th>Purpose</th><th>Duration</th></tr></thead><tbody>
+<tr><td><code>ppp-consent</code></td><td>localStorage</td><td><span class="pill">Strictly necessary</span></td><td>Records your cookie choices so we respect them and do not ask again</td><td>Until cleared, or until this policy’s version changes</td></tr>
+<tr><td><code>ppp-consent-clock</code></td><td>sessionStorage</td><td><span class="pill">Strictly necessary</span></td><td>Counts time spent on the platform so the consent pop-up appears after two (2) minutes, not on arrival</td><td>Erased when the tab closes</td></tr>
+<tr><td><code>barmm-ppp-register</code></td><td>localStorage</td><td><span class="pill">Strictly necessary</span></td><td>Keeps Assessment Register records you save on this device</td><td>Until you delete the records or clear browser data</td></tr>
+<tr><td><code>barmm-ppp-v3.x</code></td><td>Cache Storage</td><td><span class="pill">Strictly necessary</span></td><td>Offline copy of the platform’s pages, styles, scripts and data files</td><td>Replaced automatically at each release</td></tr>
+<tr><td><code>barmm-theme</code></td><td>localStorage</td><td><span class="pill gold">Preferences</span></td><td>Remembers light or dark mode</td><td>Until cleared; deleted at once if you switch Preferences off</td></tr>
+<tr><td><em>None at present</em></td><td>—</td><td><span class="pill red">Analytics</span></td><td>No analytics are loaded. If MTIT introduces privacy-respecting statistics in future, they will run only with your consent</td><td>—</td></tr>
+</tbody></table></div>
+</section>
+<section id="third" aria-labelledby="third-h"><h2 id="third-h"><span class="n">05</span>Third parties</h2>
+<p><strong>Google Fonts</strong> delivers the Montserrat, Poppins and Roboto Condensed typefaces. Your browser contacts Google’s servers to download them, which shares your IP address and browser details; Google states that the Fonts API does not set cookies. <strong>Netlify</strong> hosts the platform and processes the contact form; it does not set analytics cookies on this site.</p>
+</section>
+<section id="popup" aria-labelledby="popup-h"><h2 id="popup-h"><span class="n">06</span>How the consent pop-up works</h2>
+<ol><li>You can use the platform immediately — nothing optional is switched on before you choose.</li>
+<li>After you have spent two (2) minutes on the platform, a <strong>Cookie consent &amp; settings</strong> panel appears.</li>
+<li>Choose <strong>Accept all</strong>, <strong>Essential only</strong>, or <strong>Customise</strong> to switch individual categories on or off.</li>
+<li>Your choice is saved on this device and applies to every page. Change it at any time on this page or via “Cookie settings” in the footer.</li></ol>
+<p>Strictly necessary storage cannot be switched off because the platform cannot work without it; it is never used to track you.</p>
+</section>
+<section id="browser" aria-labelledby="browser-h"><h2 id="browser-h"><span class="n">07</span>Controlling storage in your browser</h2>
+<ul><li><strong>Chrome / Edge:</strong> Settings → Privacy and security → Delete browsing data → “Cookies and other site data”.</li>
+<li><strong>Firefox:</strong> Settings → Privacy &amp; Security → Cookies and Site Data → Clear Data.</li>
+<li><strong>Safari:</strong> Settings → Privacy → Manage Website Data → remove <em>ppp-readiness.mtit-barmm.com</em>.</li></ul>
+<p>Clearing site data deletes your Assessment Register records — export them first. Private or incognito windows discard storage when closed.</p>
+</section>
+<section id="changes" aria-labelledby="changes-h"><h2 id="changes-h"><span class="n">08</span>Changes to this policy</h2>
+<p>If we add a new storage item or category, we will update this page and its “Last updated” date and, where consent is needed, ask you again.</p>
+</section>
+<section id="contact" aria-labelledby="contact-h"><h2 id="contact-h"><span class="n">09</span>Contact</h2>
+<div class="table-wrap"><table class="data-table"><tbody>
+<tr><th scope="row">Office</th><td>Bureau of Investments, Ministry of Trade, Investments and Tourism (BOI-MTIT), BARMM</td></tr>
+<tr><th scope="row">Address</th><td>Bangsamoro Government Complex, Cotabato City 9600, Bangsamoro Autonomous Region in Muslim Mindanao, Philippines</td></tr>
+<tr><th scope="row">Email</th><td><a href="mailto:boi@bangsamoro.gov.ph">boi@bangsamoro.gov.ph</a></td></tr>
+<tr><th scope="row">Telephone</th><td><a href="tel:+63645572819">(064) 557 2819</a></td></tr>
+<tr><th scope="row">Online</th><td><a href="/public/contact.html">Contact form</a></td></tr>
+</tbody></table></div><p>Unresolved concerns may be raised with the National Privacy Commission at <a href="https://privacy.gov.ph" rel="noopener" target="_blank">privacy.gov.ph</a>.</p>
+</section>
+ </article>
+</div>
+<div class="related" aria-label="Related pages"><a href="/public/contact.html"><div class="card"><b>Contact Us</b><span>Questions, validation requests and data corrections.</span></div></a><a href="/public/terms-of-service.html"><div class="card"><b>Terms of Service</b><span>Rules for using and citing the platform.</span></div></a><a href="/public/privacy-policy.html"><div class="card"><b>Privacy Policy</b><span>How personal data is handled under RA 10173.</span></div></a></div>
+<footer class="site">© 2026 MTIT–BARMM, Bureau of Investments. Prepared by Alvin M. Silva, MDM. Descriptive evidence only; not legal, financial or investment advice.
+ <nav aria-label="Footer"><a href="/">Dashboard</a><a href="/public/contact.html">Contact Us</a><a href="/public/terms-of-service.html">Terms of Service</a><a href="/public/privacy-policy.html">Privacy Policy</a><a href="/public/cookie-policy.html">Cookie Policy</a><button type="button" class="linkish" data-cookie-settings>Cookie settings</button></nav></footer>
+ </div>
+</main></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
