@@ -1,4 +1,4 @@
-# BARMM PPP Readiness — PWA
+# BARMM PPP Readiness
 
 Static, build-free Progressive Web App for MTIT–BARMM, Bureau of Investments. Styled after the BARMM Labour Market Readiness dashboard.
 
